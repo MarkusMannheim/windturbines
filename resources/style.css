@@ -1,0 +1,74 @@
+@font-face {
+  font-family: ABCSansNovaRegular;
+  src: url(./ABCSansNova-Regular.otf);
+}
+@font-face {
+  font-family: ABCSansNovaBlack;
+  src: url(./ABCSansNova-Black.otf);
+}
+@font-face {
+  font-family: ABCSansNovaLight;
+  src: url(./ABCSansNova-Light.otf);
+}
+
+:root {
+  font-size: 1em;
+  font-family: ABCSansNovaRegular, Helvetica, sans-serif;
+  color: #001533;
+}
+
+body {  
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #e6e6e6;
+}
+
+.container {
+  text-align: center;
+  background-color: #fff;
+  padding: 1rem;
+  margin: 1rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  font-family: ABCSansNovaBlack;
+  padding: 0;
+  margin: 0 0 1rem 0;
+}
+
+form {
+  display: flex;
+  flex-flow: column;
+}
+
+input[type="number"], button {
+  font-family: ABCSansNovaRegular;
+  margin: .5rem;
+  padding: .5rem;
+  border: 1px solid #ccc;
+  text-align: center;
+  font-size: 1rem;
+  color: #001533;
+}
+
+button {
+  background-color: #037cc2;
+  color: #fff;
+  cursor: pointer;
+  font-family: ABCSansNovaBlack;
+  font-weight: normal;
+  font-size: 1.2rem;
+}
+
+button:hover {
+  background-color: #00238b;
+}
+
+#result {
+  font-weight: bold;
+}

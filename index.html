@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-155991615-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag("js", new Date());
+      gtag("config", "UA-155991615-1");
+    </script>
+
+    <!-- metaphysics -->
+    <meta charset="utf-8">
+    <title>Wind turbine visibility</title>
+    <meta name="author" content="Markus Mannheim">
+    <meta name="keywords" content="australia, wind, turbine, ocean, offshore, visible, visibility, distance">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- page visibility -->
+    <meta property="og:title" content="Wind turbine visibility">
+    <meta property="og:description" content="A calculator to work out whether you can see offshore wind turbines.">
+    <meta property="og:image" content="https://markusmannheim.github.io/windturbines/resources/turbine.jpg">
+    <meta property="og:url" content="https://markusmannheim.github.io/windturbines/">
+    <meta property="og:type" content="website">
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:site" content="@MarkusMannheim">
+    <meta property="twitter:creator" content="@MarkusMannheim">
+
+    <!-- scripts -->
+    <script src="./resources/d3.v7.min.js"></script>
+    <link href="./resources/style.css" rel="stylesheet">
+    <link href="./resources/abcLogo64.png" rel="icon">
+  </head>
+
+  <body>
+    <div class="container">
+        <h1>Offshore wind turbine visibility</h1>
+        <form id="distanceForm">
+            <label for="observerHeight">Height of observer (metres):</label>
+            <input type="number" id="observerHeight" placeholder="enter observer height" required step="any" min="0">
+            <label for="turbineHeight">Height of turbine (metres):</label>
+            <input type="number" id="turbineHeight" placeholder="enter turbine height" required step="any" min="0" max="260">
+            <button type="submit">CALCULATE</button>
+        </form>
+        <div id="result"></div>
+    </div>
+
+    <script src="./resources/script.js"></script>
+
+  </body>
+</html>
