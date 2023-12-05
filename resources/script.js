@@ -6,7 +6,7 @@ document.getElementById('distanceForm').addEventListener('submit', function(e) {
   
     if (!isNaN(observerHeight) && !isNaN(turbineHeight)) {
       const distance = calculateDistance(observerHeight, turbineHeight);
-      document.getElementById('result').innerHTML = `<p>The turbine can be seen from up to ${(distance / 1000).toFixed(1)} kilometres away in perfect conditions.</p>`;
+      document.getElementById('result').innerHTML = `<p>The turbine can be seen from ${(distance / 1000).toFixed(1)} kilometres away in perfect conditions.</p>`;
     } else {
       document.getElementById('result').innerHTML = '<p>Enter valid numbers</p>';
     }
